@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import com.test.application.MyMenu?>
+
+<?scenebuilder-classpath-element  D:/workspace2014/test6/target/classes?>
+
+<MyMenu id="myMenu" xmlns:fx="http://javafx.com/fxml"   fx:controller="com.test.application.MyMenuController">
+
+    <MenuBar fx:id="menuBar" >
+        <menus>
+            <Menu text="File">
+                <items>
+                    <MenuItem text="Gestion person"   onAction="#handleMenuPerson" />
+                    <MenuItem text="Gestion animaux"  onAction="#handleMenuAnimals" />
+                    <MenuItem text="Gestion veterinaire"  onAction="#handleMenuVeterinaire" />
+                    <MenuItem text="Gestion visites"/>
+                    <SeparatorMenuItem  />
+                    <MenuItem text="Exit"  onAction="#handleExit" />
+                </items>
+            </Menu>
+            <Menu text="Edit">
+                <items>
+                    <MenuItem text="Copy"/>
+                    <MenuItem text="Cut"/>
+                    <MenuItem text="Paste"/>
+                </items>
+            </Menu>
+            <Menu text="Help">
+                <items>
+                    <MenuItem text="Search" disable="true"/>
+                    <MenuItem text="Online Manual" visible="false"/>
+                    <SeparatorMenuItem />
+                    <MenuItem text="About" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+
+</MyMenu>

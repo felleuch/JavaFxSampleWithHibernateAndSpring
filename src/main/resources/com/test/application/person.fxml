@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<?scenebuilder-classpath-element  D:/workspace2014/test6/target/classes?>
+
+<VBox id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="800" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.PersonController">
+        <fx:include source="MyMenu.fxml" fx:id="myMenu" />
+      <children>
+
+ <AnchorPane prefHeight="600.0" prefWidth="200.0">
+<children>
+      <Button layoutX="0" layoutY="20" onAction="#nouveauPerson" text="Ajouter personne" />
+      <Label layoutX="196.0" layoutY="20.0" style="-fx-font: NORMAL 20 Tahoma;" text="Liste des personnes" GridPane.columnIndex="0" />
+
+    <TableView fx:id="tableView" layoutY="50">
+        <columns>
+            <TableColumn fx:id="firstNameColumn" prefWidth="100.0" text="First Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="firstName" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="100.0" text="Last Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="lastName" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="200.0" text="Birth date">
+                <cellValueFactory>
+                    <PropertyValueFactory property="birthDate" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="200.0" text="Email Address">
+                <cellValueFactory>
+                    <PropertyValueFactory property="email" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+
+    </TableView>
+    <Pagination fx:id="pagination" layoutX="188.0" layoutY="450" />
+</children></AnchorPane>
+
+
+
+
+      </children>
+</VBox>

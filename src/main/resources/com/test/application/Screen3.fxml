@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+   <VBox id="AnchorPane" prefHeight="400" prefWidth="800" xmlns:fx="http://javafx.com/fxml" fx:controller="com.test.Screen3Controller">
+
+    <fx:include source="MyMenu.fxml" fx:id="myMenu" />
+    <children>
+    <VBox alignment="CENTER" prefHeight="153.0" prefWidth="174.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Label text="Gestion veterinaire">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+        <Button mnemonicParsing="false" onAction="#goToScreen1" text="Gestion person" />
+        <Button mnemonicParsing="false" onAction="#goToScreen2" text="Gestion animaux" />
+      </children>
+    </VBox>
+  </children>
+</VBox>

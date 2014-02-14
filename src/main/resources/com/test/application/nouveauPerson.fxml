@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+
+<VBox id="AnchorPane" minHeight="122.0" prefHeight="150.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.test.NewPersonController">
+
+    <fx:include source="MyMenu.fxml" fx:id="myMenu" />
+
+    <children>
+        <VBox alignment="CENTER" prefHeight="222.0" prefWidth="601.0" spacing="20.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <Label text="Nouveau">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <HBox alignment="BOTTOM_RIGHT" spacing="10.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                    <TextField fx:id="firstNameField" prefWidth="90.0" promptText="First Name" />
+                    <TextField fx:id="lastNameField" prefWidth="90.0" promptText="Last Name" />
+                    <DatePicker fx:id="birthDate" prefWidth="150.0" promptText="Birth date" />
+                    <TextField fx:id="emailField" prefWidth="150.0" promptText="Email" />
+                    <Button onAction="#save" text="Save" />
+
+                </HBox>
+
+            </children>
+            <padding>
+                <Insets />
+            </padding>
+        </VBox>
+    </children>
+</VBox>
